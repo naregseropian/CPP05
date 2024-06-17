@@ -5,13 +5,13 @@ RobotomyRequestForm::RobotomyRequestForm(const std::string& target)
 {
 }
 
-RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &other)
+RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm& other)
         : AForm(other.getName(), other.getGradeSigned(), other.getGradeExec()), _target(other.getTarget())
 {
     *this = other;
 }
 
-RobotomyRequestForm& RobotomyRequestForm::operator=(const RobotomyRequestForm &rhs)
+RobotomyRequestForm& RobotomyRequestForm::operator=(const RobotomyRequestForm& rhs)
 {
     if (this != &rhs)
     {
