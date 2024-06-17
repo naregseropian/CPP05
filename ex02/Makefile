@@ -1,7 +1,7 @@
 NAME = ex02
 CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra -g -std=c++98
-SRCS = main.cpp Bureaucrat.cpp AForm.cpp
+SRCS = main.cpp Bureaucrat.cpp AForm.cpp ShrubberryCreationForm.cpp RobotomyRequestForm.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 $(NAME): $(OBJS)

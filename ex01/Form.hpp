@@ -10,6 +10,8 @@ class Form
 {
     public:
         Form(const std::string& name, int gradeSign, int gradeExec);
+        Form(const Form& other);
+        Form& operator=(const Form& rhs);
         ~Form();
 
         const std::string& getName(void) const;
@@ -39,7 +41,7 @@ class Form
 
     private:
         const std::string   _name;
-        bool                _signed;
+        bool                _isSigned;
         const int           _gradeSign;
         const int           _gradeExec;
 };
