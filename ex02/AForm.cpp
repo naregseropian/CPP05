@@ -66,7 +66,7 @@ void AForm::checkExecuteRequirements(const Bureaucrat &executor) const
     if (!_isSigned)
         throw AForm::isNotSignedException("Form is not signed.");
     if (executor.getGrade() > _gradeExec)
-        throw AForm::GradeTooLowToExcecuteException("Grade too low to execute.");
+        throw AForm::GradeTooLowToExcecuteException("Executor's grade too low to execute form.");
 }
 
 AForm::GradeTooLowException::GradeTooLowException(const char* msg): _error_msg(msg) {}

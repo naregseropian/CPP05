@@ -33,8 +33,9 @@ AForm *createRobotomyRequestForm(const std::string &target)
 AForm *createPresidentialPardonForm(const std::string &target)
 {
 	PresidentialPardonForm *presidentialFormPtr = new PresidentialPardonForm(target);
-	AForm *genericAFormPtr = static_cast<AForm *>(presidentialFormPtr);
-	return genericAFormPtr;
+	// AForm *genericAFormPtr = static_cast<AForm *>(presidentialFormPtr);
+	// return genericAFormPtr;
+	return presidentialFormPtr;
 }
 
 AForm *Intern::makeForm(const std::string &formName, const std::string &target)
